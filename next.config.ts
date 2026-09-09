@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      new URL("https://olivedrab-seahorse-981397.hostingersite.com/**"),
+    ],
+  },
 };
 
 export default nextConfig;
